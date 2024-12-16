@@ -29,7 +29,21 @@ pip install -r requirements.txt
 
 #### Method (1): Installation via ComfyUI Manager
 
-TBD, not supported yet.
+Download and install [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager).
+
+```shell
+cd ComfyUI/custom_nodes/
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+
+# install requirements
+pip install -r ComfyUI-Manager/requirements.txt
+```
+
+Next, start ComfyUI and open the Manager. Select Custom Nodes Manager, then search for "Ruyi". You should see ComfyUI-Ruyi as shown in the screenshot below. Click "Install" to proceed.
+
+<div align=center>
+  <img src="https://github.com/user-attachments/assets/7acc58c2-9b1c-4748-b0c0-5cc51eb24e05"></img>
+</div>
 
 #### Method (2): Manual Installation
 
@@ -44,7 +58,7 @@ git clone https://github.com/IamCreateAI/Ruyi-Models.git
 pip install -r Ruyi-Models/requirements.txt
 ```
 
-Install the dependency ComfyUI-VideoHelperSuite to display video output (skip this step if already installed).
+Install the dependency [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite) to display video output (skip this step if already installed).
 
 ```shell
 # download ComfyUI-VideoHelperSuite
