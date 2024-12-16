@@ -18,7 +18,21 @@ pip install -r requirements.txt
 
 #### 方法（1）：通过 ComfyUI Manager 安装
 
-暂不支持，有待完善。
+下载并安装 [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)。
+
+```shell
+cd ComfyUI/custom_nodes/
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+
+# install requirements
+pip install -r ComfyUI-Manager/requirements.txt
+```
+
+启动 ComfyUI 并打开 Manager。选择 Custom Nodes Manager，然后搜索 “Ruyi”。选择搜索结果中的 ComfyUI-Ruyi（如下方截图所示），点击 “Install” 按钮安装。
+
+<div align=center>
+  <img src="https://github.com/user-attachments/assets/7acc58c2-9b1c-4748-b0c0-5cc51eb24e05"></img>
+</div>
 
 #### 方法（2）：手动安装
 
