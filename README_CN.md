@@ -99,10 +99,10 @@ python3 predict_i2v.py
 
 <table>
     <tr>
-        <td><video src="https://github.com/user-attachments/assets/2779d7fb-24b7-4b98-b297-404a9c369a25"></video></td>
-        <td><video src="https://github.com/user-attachments/assets/bb193d9f-f6e9-4504-bf1a-5ba7c63adb3f"></video></td>
-        <td><video src="https://github.com/user-attachments/assets/6f1e1aef-dd62-493e-8943-2ed45ac79c9c"></video></td>
-        <td><video src="https://github.com/user-attachments/assets/199c8b47-b0bc-4ff7-bd12-6c193f424335"></video></td>
+        <td><video src="https://github.com/user-attachments/assets/4dedf40b-82f2-454c-9a67-5f4ed243f5ea"></video></td>
+        <td><video src="https://github.com/user-attachments/assets/905fef17-8c5d-49b0-a49a-6ae7e212fa07"></video></td>
+        <td><video src="https://github.com/user-attachments/assets/20daab12-b510-448a-9491-389d7bdbbf2e"></video></td>
+        <td><video src="https://github.com/user-attachments/assets/f1bb0a91-d52a-4611-bac2-8fcf9658cac0"></video></td>
     </tr>
 </table>
 
@@ -110,14 +110,14 @@ python3 predict_i2v.py
 
 <table>
     <tr>
-        <td align=center><img src="assets/example_02.jpg" height=200></img>input</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/efcbacb0-3270-4043-b732-2a3b7d94650c"></video>left</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/4f68fe2f-af90-496c-a975-eb974004f369"></video>right</td>
+        <td align=center><img src="https://github.com/user-attachments/assets/8aedcea6-3b8e-4c8b-9fed-9ceca4d41954" height=200></img>input</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/d9d027d4-0d4f-45f5-9d46-49860b562c69"></video>left</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/7716a67b-1bb8-4d44-b128-346cbc35e4ee"></video>right</td>
     </tr>
     <tr>
-        <td align=center><video src="https://github.com/user-attachments/assets/1058c5f3-3154-4415-a7ea-dc38c6862e94"></video>static</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/33898b54-de6e-4c64-bf4f-74098cac6325"></video>up</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/bada1fe5-39a4-44d2-b916-eeebf4b70dfd"></video>down</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/cc1f1928-cab7-4c4b-90af-928936102e66"></video>static</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/c742ea2c-503a-454f-a61a-10b539100cd9"></video>up</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/442839fa-cc53-4b75-b015-909e44c065e0"></video>down</td>
     </tr>
 </table>
 
@@ -125,10 +125,10 @@ python3 predict_i2v.py
 
 <table>
     <tr>
-        <td align=center><video src="https://github.com/user-attachments/assets/5010efb3-ba39-4589-bae1-28a27a35852e"></video>motion 1</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/52ee1e20-e5d4-40a1-9afd-2dfc3350a0cd"></video>motion 2</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/a818c5f5-a017-4221-91f6-bff44423d8b9"></video>motion 3</td>
-        <td align=center><video src="https://github.com/user-attachments/assets/9863326d-b691-4493-86bb-82d8880e38e6"></video>motion 4</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/0020bd54-0ff6-46ad-91ee-d9f0df013772"></video>motion 1</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/d1c26419-54e3-4b86-8ae3-98e12de3022e"></video>motion 2</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/535147a2-049a-4afc-8d2a-017bc778977e"></video>motion 3</td>
+        <td align=center><video src="https://github.com/user-attachments/assets/bf893d53-2e11-406f-bb9a-2aacffcecd44"></video>motion 4</td>
     </tr>
 </table>
 
