@@ -42,8 +42,10 @@ pip install -r ComfyUI-Manager/requirements.txt
 Next, start ComfyUI and open the Manager. Select Custom Nodes Manager, then search for "Ruyi". You should see ComfyUI-Ruyi as shown in the screenshot below. Click "Install" to proceed.
 
 <div align=center>
-  <img src="https://github.com/user-attachments/assets/7acc58c2-9b1c-4748-b0c0-5cc51eb24e05"></img>
+  <img src="https://github.com/user-attachments/assets/10dda65f-13d5-4da8-9437-9c98b114536c"></img>
 </div>
+
+Finally, search for "ComfyUI-VideoHelperSuite" and install it as well.
 
 #### Method (2): Manual Installation
 
