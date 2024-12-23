@@ -10,6 +10,6 @@ Repository = "https://github.com/IamCreateAI/Ruyi-Models"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "CreateAI"
 DisplayName = "Ruyi-Models"
 Icon = ""
