@@ -20,6 +20,7 @@ The Load Model node is used to load the model from disk. It also provides the fu
 
 - **model**: Select which model to use. Currently, Ruyi-Mini-7B is the only option.
 - **auto_download**: Whether to automatically download. Defaults to yes. If the model is detected as missing or incomplete, it will automatically download the model to the *ComfyUI/models/Ruyi* path.
+- **auto_update**: Whether to automatically check for and update the current model. Defaults to yes. When auto_download is enabled, the system will automatically check for updates to the model and download any updates to the *ComfyUI/models/Ruyi* directory. Please note that this feature relies on the caching mechanism of huggingface_hub, so do not delete the *.cache* folder in the model directory to ensure a smooth update process.
 
 ### Load LoRA
 

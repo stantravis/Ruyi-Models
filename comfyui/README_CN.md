@@ -20,6 +20,7 @@
 
 - **model**: 选择使用哪个模型，目前只有 Ruyi-Mini-7B 一个选项。
 - **auto_download**: 是否自动下载，默认为 yes，检测到模型不存在（或不完整）时，将自动下载模型到 *ComfyUI/models/Ruyi* 路径。
+- **auto_update**: 是否自动检查并更新当前模型，默认为 yes。当启用 auto_download 时，系统将自动检查模型是否有更新，并将更新内容下载到 *ComfyUI/models/Ruyi* 路径。请注意，此功能依赖于 huggingface_hub 的缓存机制，因此请勿删除模型路径中的 *.cache* 文件夹，以确保更新过程顺利进行。
 
 ### Load LoRA
 

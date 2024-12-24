@@ -46,6 +46,12 @@ class Ruyi_LoadModel:
                         "default": "yes"
                     }
                 ),
+                "auto_update": (
+                    ["yes", "no"],
+                    {
+                        "default": "yes"
+                    }
+                )
             },
         }
 
@@ -121,7 +127,7 @@ class Ruyi_LoadModel:
             print("[Ruyi] Setup pipeline failed:", e)
             return None
 
-    def load_model(self, model, auto_download):
+    def load_model(self, model, auto_download, auto_update):
         # Init weight_dtype and device
         device          = mm.get_torch_device()
         offload_device  = mm.unet_offload_device()
@@ -135,9 +141,16 @@ class Ruyi_LoadModel:
         config_path = os.path.join(script_directory, "config", "default.yaml")
         config = OmegaConf.load(config_path)
 
-        # Init model
+        # Check for update
         repo_id = f"IamCreateAI/{model_name}"
         model_path = os.path.join(folder_paths.models_dir, "Ruyi", model_name)
+        if auto_download == "yes" and auto_update == "yes":
+            print(f"Checking for {model_name} updates ...")
+            
+            # Download the model
+            snapshot_download(repo_id=repo_id, local_dir=model_path)
+
+        # Init model
         pipeline = self.try_setup_pipeline(model_path, weight_dtype, config)
         if pipeline is None and auto_download == "yes":
             mm.soft_empty_cache()

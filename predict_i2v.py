@@ -46,7 +46,8 @@ config_path         = "config/default.yaml"
 model_name          = "Ruyi-Mini-7B"
 model_type          = "Inpaint"
 model_path          = f"models/{model_name}"    # (Down)load mode in this path
-auto_download       = True
+auto_download       = True                      # Automatically download the model if the pipeline creation fails
+auto_update         = True                      # If auto_download is enabled, check for updates and update the model if necessary
 
 # LoRA settings
 lora_path           = None
@@ -145,9 +146,6 @@ def try_setup_pipeline(model_path, weight_dtype, config):
         return None
 
 
-# Init weight_dtype and device
-weight_dtype = torch.bfloat16
-
 # Load config
 config = OmegaConf.load(config_path)
 
@@ -155,8 +153,15 @@ config = OmegaConf.load(config_path)
 start_img = [Image.open(start_image_path).convert("RGB")]
 end_img   = [Image.open(end_image_path).convert("RGB")] if end_image_path is not None else None
 
-# Init model
+# Check for update
 repo_id = f"IamCreateAI/{model_name}"
+if auto_download and auto_update:
+    print(f"Checking for {model_name} updates ...")
+
+    # Download the model
+    snapshot_download(repo_id=repo_id, local_dir=model_path)
+
+# Init model
 pipeline = try_setup_pipeline(model_path, weight_dtype, config)
 if pipeline is None and auto_download:
     print(f"Downloading {model_name} ...")
