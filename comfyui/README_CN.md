@@ -15,7 +15,7 @@
 用于加载模型，并提供**自动下载模型**（通过 auto_download 选项设置）的功能。
 
 <div align=center>
-  <img src="https://github.com/user-attachments/assets/0ec48688-30fa-40a1-9ad4-862549a70730"></img>
+  <img src="https://github.com/user-attachments/assets/2e9fcbb5-6f7c-451c-b742-5b844e949a01"></img>
 </div>
 
 - **model**: 选择使用哪个模型，目前只有 Ruyi-Mini-7B 一个选项。

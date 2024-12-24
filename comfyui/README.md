@@ -15,7 +15,7 @@ The following sections will introduce the functions and parameters of each node.
 The Load Model node is used to load the model from disk. It also provides the functionality for **automatic model downloading** (auto_download parameter).
 
 <div align=center>
-  <img src="https://github.com/user-attachments/assets/0ec48688-30fa-40a1-9ad4-862549a70730"></img>
+  <img src="https://github.com/user-attachments/assets/2e9fcbb5-6f7c-451c-b742-5b844e949a01"></img>
 </div>
 
 - **model**: Select which model to use. Currently, Ruyi-Mini-7B is the only option.
