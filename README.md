@@ -165,6 +165,8 @@ We provide the options **`GPU_memory_mode` and `GPU_offload_steps` to reduce GPU
 
 Generally speaking, using **less GPU memory requires more RAM and results in longer generation times**. Below is a reference table of expected GPU memory usage and generation times. Note that, the GPU memory reported below is the `max_memory_allocated()` value. The values read from nvidia-smi may be higher than the reported values because CUDA occupies some GPU memory (usually between 500 - 800 MiB), and PyTorch's caching mechanism also requests additional GPU memory.
 
+Additionally, the community and we have created a detailed table featuring various resolutions and option combinations, which can be found in the [gpu_memory_appendix.md](assets/gpu_memory_appendix.md). We encourage community members to help us complete the table.
+
 ### A100 Results
 
 - Resolution of 512

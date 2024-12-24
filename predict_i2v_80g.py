@@ -201,10 +201,7 @@ else:
     height, width = video_size
 
 # Set hidden states offload steps
-if pipeline.model_cpu_offload_flag:
-    pipeline.transformer.hidden_cache_size = gpu_offload_steps
-else:
-    pipeline.transformer.hidden_cache_size = 0
+pipeline.transformer.hidden_cache_size = gpu_offload_steps
 
 # Load Sampler
 if scheduler_name == "DPM++":

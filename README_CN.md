@@ -154,6 +154,8 @@ python3 predict_i2v.py
 
 通常来说，**使用更少的显存，需要更多的内存和更长的生成时间**。以下列出预期显存使用和生成时间的参考表格。请注意，下面报告的显存是 `max_memory_allocated()` 的返回值，而 nvidia-smi 的显存数值通常会高于报告的数值。因为 CUDA 会占用一些显存（通常在500 - 800 MiB之间），而 PyTorch 的缓存机制也会请求额外的显存。
 
+此外，在社区的帮助下创建了一张详细的表格 [gpu_memory_appendix.md](assets/gpu_memory_appendix.md)，包含了更多分辨率和选项组合。欢迎社区成员帮助完善表格。
+
 ### A100 的显存占用与运行时间
 
 - Resolution of 512
