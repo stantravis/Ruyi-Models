@@ -221,4 +221,4 @@ python3 predict_i2v.py
 
 我们真诚欢迎大家积极提供宝贵的反馈和建议，希望能够共同努力优化我们的服务和产品。您的意见将帮助我们更好地理解用户需求，从而不断提升用户体验。感谢您对我们工作的支持和关注！欢迎加入我们的[Discord](https://discord.com/invite/nueQFQwwGw) 或者微信群（扫描下方二维码，添加 Ruyi 小助手，加入官方交流群）！
 
-<img src="https://github.com/user-attachments/assets/d6921e95-95cf-4a78-969c-d2ffadc5b928" style="width:300px"></img>
+<img src="https://github.com/user-attachments/assets/cc5e25c6-34ab-4be1-a59b-7d5789264a9c" style="width:300px"></img>

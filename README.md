@@ -234,4 +234,4 @@ We sincerely welcome everyone to actively provide valuable feedback and suggesti
 
 You are welcomed to join our [Discord](https://discord.com/invite/nueQFQwwGw) or Wechat Group (Scan QR code to add Ruyi Assistant and join the official group) for further discussion!
 
-<img src="https://github.com/user-attachments/assets/d6921e95-95cf-4a78-969c-d2ffadc5b928" style="width:300px"></img>
+<img src="https://github.com/user-attachments/assets/cc5e25c6-34ab-4be1-a59b-7d5789264a9c" style="width:300px"></img>
