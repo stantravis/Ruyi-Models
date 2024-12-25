@@ -232,6 +232,6 @@ We’re releasing the model under a permissive **Apache 2.0 license**.
 
 We sincerely welcome everyone to actively provide valuable feedback and suggestions, and we hope to work together to optimize our services and products. Your words will help us better understand user needs, allowing us to continuously enhance the user experience. Thank you for your support and attention to our work!
 
-You are welcomed to join our [Discord](https://discord.com/invite/nueQFQwwGw) or Wechat Group (Scan QR code) for further discussion!
+You are welcomed to join our [Discord](https://discord.com/invite/nueQFQwwGw) or Wechat Group (Scan QR code to add Ruyi Assistant and join the official group) for further discussion!
 
-![wechat](assets/wechat_group.png)
+<img src="https://github.com/user-attachments/assets/d6921e95-95cf-4a78-969c-d2ffadc5b928" style="width:300px"></img>
