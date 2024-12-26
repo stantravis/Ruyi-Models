@@ -26,7 +26,7 @@ video_length        = 120       # The max video length is 120 frames (24 frames 
 base_resolution     = 512       # # The pixels in the generated video are approximately 512 x 512. Values in the range of [384, 896] typically produce good video quality.
 video_size          = None      # Override base_resolution. Format: [height, width], e.g., [384, 672]
 # Control settings
-aspect_ratio        = "9:16"    # Choose in ["16:9", "9:16"], note that this is only the hint
+aspect_ratio        = "16:9"    # Do not change, currently "16:9" works better
 motion              = "auto"    # Motion control, choose in ["1", "2", "3", "4", "auto"]
 camera_direction    = "auto"    # Camera control, choose in ["static", "left", "right", "up", "down", "auto"]
 # Sampler settings

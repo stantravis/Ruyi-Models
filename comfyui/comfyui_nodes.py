@@ -361,7 +361,7 @@ class Ruyi_I2VSampler:
         original_width, original_height = start_img[0].size if type(start_img) is list else Image.open(start_img).size
         closest_size, closest_ratio = get_closest_ratio(original_height, original_width, ratios=aspect_ratio_sample_size)
         height, width = [int(x / 16) * 16 for x in closest_size]
-        aspect_ratio = "16:9" if width > height else "9:16"
+        aspect_ratio = "16:9"  # Do not change, currently "16:9" works better
         
         # Get Pipeline
         pipeline = ruyi_model['pipeline']
