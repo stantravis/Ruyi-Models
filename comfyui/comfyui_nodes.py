@@ -424,11 +424,6 @@ class Ruyi_I2VSampler:
         # Load control embeddings
         embeddings = self.get_control_embeddings(pipeline, aspect_ratio, motion, camera_direction)
 
-        try:
-            torch.cuda.reset_peak_memory_stats(device)
-        except:
-            pass
-
         # Inference
         with torch.no_grad(), torch.autocast(str(device), dtype = pipeline.transformer.dtype):
             video_length = int(video_length // pipeline.vae.mini_batch_encoder * pipeline.vae.mini_batch_encoder) if video_length != 1 else 1
