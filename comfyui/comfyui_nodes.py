@@ -55,11 +55,11 @@ class Ruyi_LoadModel:
 
                 "fp8_quant_mode": (
                     [ "none", "lite", "strong", "extreme"],
-                    { "default": "none", "tooltip": 'Mode "extreme" is not recommended for good quality'}
+                    { "default": "none"}
                 ),
                 "fp8_data_type": (
                     [ "auto", "fp8_e4m3fn", "fp8_e5m2"],
-                    { "default": "auto"}
+                    { "default": "auto", "tooltip": 'do not use "fp8_e5m2" with "extreme" mode'}
                 ),
             },
         }
@@ -100,7 +100,7 @@ class Ruyi_LoadModel:
             pbar.update(1)
 
             if self.fp8_quant_mode != 'none':
-                count_f8 =0
+                count_f8 = 0
                 fp8_type = torch.float8_e5m2 if self.fp8_data_type == 'fp8_e5m2' else torch.float8_e4m3fn
                 if self.fp8_quant_mode != 'extreme':
 
@@ -115,11 +115,11 @@ class Ruyi_LoadModel:
                                 count_f8 += 1
                 else:
                     for module in transformer.modules():
-                        if len(list(module.modules())) > 1: continue
-                        elif module.__class__.__name__ not in ["Embedding"]:
-                            module.to(fp8_type)
-                            count_f8 += 1
-
+                        if len(list(module.modules())) == 1 and list(module.named_parameters()):
+                            if module.__class__.__name__ not in ["Embedding",'LayerNorm','Conv2d','NonDynamicallyQuantizableLinear']:
+                                module.to(fp8_type)
+                                count_f8 += 1
+                               
                 print (f'FP8: {count_f8} layers converted to {fp8_type}')
             # Update pbar
             pbar.update(1)
