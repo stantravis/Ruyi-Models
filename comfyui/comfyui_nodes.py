@@ -109,8 +109,7 @@ class Ruyi_LoadModel:
 
                     for module in transformer.modules():
                         if module.__class__.__name__ in ["Linear"]:
-                            x,y = module.weight.shape
-                            if x * y > shape_size:
+                            if module.weight.numel() > shape_size:
                                 module.to(fp8_type)
                                 count_f8 += 1
                 else:
